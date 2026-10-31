@@ -1,0 +1,307 @@
+{
+    "title": "PCOSense Input Schema",
+    "description": "Expected input features and validation constraints for web UI integration",
+    "features": [
+        {
+            "name": "Age",
+            "type": "string",
+            "widget": "dropdown",
+            "options": [
+                "Less than 20",
+                "20-25",
+                "25-30",
+                "30-35",
+                "35-44",
+                "45 and above"
+            ],
+            "default": "20-25"
+        },
+        {
+            "name": "Weight_kg",
+            "type": "float",
+            "widget": "number",
+            "min": 30.0,
+            "max": 150.0,
+            "step": 0.5,
+            "unit": "kg",
+            "default": 55.0
+        },
+        {
+            "name": "Height_ft",
+            "type": "float",
+            "widget": "number",
+            "min": 120.0,
+            "max": 200.0,
+            "step": 0.5,
+            "unit": "cm",
+            "default": 160.0
+        },
+        {
+            "name": "Marital_Status",
+            "type": "string",
+            "widget": "dropdown",
+            "options": [
+                "Unmarried",
+                "Married",
+                "Widow"
+            ],
+            "default": "Unmarried"
+        },
+        {
+            "name": "Family_History_PCOS",
+            "type": "string",
+            "widget": "dropdown",
+            "options": [
+                "No",
+                "Yes"
+            ],
+            "default": "No"
+        },
+        {
+            "name": "Menstrual_Irregularity",
+            "type": "string",
+            "widget": "dropdown",
+            "options": [
+                "No",
+                "Yes"
+            ],
+            "default": "No"
+        },
+        {
+            "name": "Hirsutism",
+            "type": "string",
+            "widget": "dropdown",
+            "options": [
+                "No",
+                "Yes"
+            ],
+            "default": "No"
+        },
+        {
+            "name": "Mental_Health",
+            "type": "string",
+            "widget": "dropdown",
+            "options": [
+                "No",
+                "Yes"
+            ],
+            "default": "Yes"
+        },
+        {
+            "name": "Diabetes",
+            "type": "string",
+            "widget": "dropdown",
+            "options": [
+                "No",
+                "Yes"
+            ],
+            "default": "No"
+        },
+        {
+            "name": "Childhood_Trauma",
+            "type": "string",
+            "widget": "dropdown",
+            "options": [
+                "No",
+                "Yes"
+            ],
+            "default": "No"
+        },
+        {
+            "name": "Cardiovascular_Disease",
+            "type": "string",
+            "widget": "dropdown",
+            "options": [
+                "No",
+                "Yes"
+            ],
+            "default": "No"
+        },
+        {
+            "name": "Diet_Bread_Cereals",
+            "type": "int",
+            "widget": "slider",
+            "min": 0,
+            "max": 7,
+            "unit": "days/week",
+            "default": 5
+        },
+        {
+            "name": "Diet_Milk_Products",
+            "type": "int",
+            "widget": "slider",
+            "min": 0,
+            "max": 7,
+            "unit": "days/week",
+            "default": 3
+        },
+        {
+            "name": "Diet_Fruits",
+            "type": "int",
+            "widget": "slider",
+            "min": 0,
+            "max": 7,
+            "unit": "days/week",
+            "default": 3
+        },
+        {
+            "name": "Diet_Vegetables",
+            "type": "int",
+            "widget": "slider",
+            "min": 0,
+            "max": 7,
+            "unit": "days/week",
+            "default": 4
+        },
+        {
+            "name": "Diet_Starchy_Vegetables",
+            "type": "int",
+            "widget": "slider",
+            "min": 0,
+            "max": 7,
+            "unit": "days/week",
+            "default": 3
+        },
+        {
+            "name": "Diet_NonStarchy_Vegetables",
+            "type": "int",
+            "widget": "slider",
+            "min": 0,
+            "max": 7,
+            "unit": "days/week",
+            "default": 3
+        },
+        {
+            "name": "Diet_Fats",
+            "type": "int",
+            "widget": "slider",
+            "min": 0,
+            "max": 7,
+            "unit": "days/week",
+            "default": 4
+        },
+        {
+            "name": "Diet_Sweets",
+            "type": "int",
+            "widget": "slider",
+            "min": 0,
+            "max": 7,
+            "unit": "days/week",
+            "default": 2
+        },
+        {
+            "name": "Diet_Fried_Food",
+            "type": "int",
+            "widget": "slider",
+            "min": 0,
+            "max": 7,
+            "unit": "days/week",
+            "default": 2
+        },
+        {
+            "name": "Diet_Tea_Coffee",
+            "type": "int",
+            "widget": "slider",
+            "min": 0,
+            "max": 7,
+            "unit": "days/week",
+            "default": 4
+        },
+        {
+            "name": "Diet_Multivitamin",
+            "type": "int",
+            "widget": "slider",
+            "min": 0,
+            "max": 7,
+            "unit": "days/week",
+            "default": 0
+        },
+        {
+            "name": "Vegetarian",
+            "type": "string",
+            "widget": "dropdown",
+            "options": [
+                "No",
+                "Yes"
+            ],
+            "default": "No"
+        },
+        {
+            "name": "Exercise_Frequency",
+            "type": "string",
+            "widget": "dropdown",
+            "options": [
+                "Never",
+                "Rarely",
+                "1-2 Times a Week",
+                "3-4 Times a Week",
+                "Daily"
+            ],
+            "default": "Rarely"
+        },
+        {
+            "name": "Exercise_Type",
+            "type": "string",
+            "widget": "dropdown",
+            "options": [
+                "No Exercise",
+                "Cardio (e.g., running, cycling, swimming)",
+                "Flexibility and balance (e.g., yoga, pilates)",
+                "Strength training (e.g., weightlifting, resistance exercises)",
+                "High-intensity interval training (HIIT)"
+            ],
+            "default": "No Exercise"
+        },
+        {
+            "name": "Exercise_Duration",
+            "type": "string",
+            "widget": "dropdown",
+            "options": [
+                "Not Applicable",
+                "Less than 30 minutes",
+                "30 minutes",
+                "30 minutes to 1 hour",
+                "More than 30 minutes"
+            ],
+            "default": "Not Applicable"
+        },
+        {
+            "name": "Sleep_Hours",
+            "type": "string",
+            "widget": "dropdown",
+            "options": [
+                "Less than 6 hours",
+                "6-8 hours",
+                "9-12 hours",
+                "More than 12 hours"
+            ],
+            "default": "6-8 hours"
+        },
+        {
+            "name": "Stress_Level",
+            "type": "string",
+            "widget": "dropdown",
+            "options": [
+                "No",
+                "Yes"
+            ],
+            "default": "Yes"
+        },
+        {
+            "name": "Smoking",
+            "type": "string",
+            "widget": "dropdown",
+            "options": [
+                "No",
+                "Yes"
+            ],
+            "default": "No"
+        },
+        {
+            "name": "BMI",
+            "type": "float",
+            "widget": "computed",
+            "formula": "Weight_kg / ((Height_ft / 100) ** 2)"
+        }
+    ]
+}

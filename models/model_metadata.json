@@ -1,0 +1,93 @@
+{
+    "model_name": "PCOS_Risk_Prediction_Pipeline",
+    "version": "1.0.0",
+    "algorithm": "RandomForestClassifier",
+    "best_parameters": {
+        "classifier__max_depth": 3,
+        "classifier__min_samples_leaf": 1,
+        "classifier__min_samples_split": 2,
+        "classifier__n_estimators": 50
+    },
+    "target": "PCOS",
+    "classes": [
+        "No",
+        "Yes"
+    ],
+    "features": {
+        "all_input_features": [
+            "Age",
+            "Weight_kg",
+            "Height_ft",
+            "Marital_Status",
+            "Family_History_PCOS",
+            "Menstrual_Irregularity",
+            "Hirsutism",
+            "Mental_Health",
+            "Diabetes",
+            "Childhood_Trauma",
+            "Cardiovascular_Disease",
+            "Diet_Bread_Cereals",
+            "Diet_Milk_Products",
+            "Diet_Fruits",
+            "Diet_Vegetables",
+            "Diet_Starchy_Vegetables",
+            "Diet_NonStarchy_Vegetables",
+            "Diet_Fats",
+            "Diet_Sweets",
+            "Diet_Fried_Food",
+            "Diet_Tea_Coffee",
+            "Diet_Multivitamin",
+            "Vegetarian",
+            "Exercise_Frequency",
+            "Exercise_Type",
+            "Exercise_Duration",
+            "Sleep_Hours",
+            "Stress_Level",
+            "Smoking",
+            "BMI"
+        ],
+        "numerical_features": [
+            "Weight_kg",
+            "Height_ft",
+            "Diet_Bread_Cereals",
+            "Diet_Milk_Products",
+            "Diet_Fruits",
+            "Diet_Vegetables",
+            "Diet_Starchy_Vegetables",
+            "Diet_NonStarchy_Vegetables",
+            "Diet_Fats",
+            "Diet_Sweets",
+            "Diet_Fried_Food",
+            "Diet_Tea_Coffee",
+            "Diet_Multivitamin",
+            "BMI"
+        ],
+        "categorical_features": [
+            "Age",
+            "Marital_Status",
+            "Family_History_PCOS",
+            "Menstrual_Irregularity",
+            "Hirsutism",
+            "Mental_Health",
+            "Diabetes",
+            "Childhood_Trauma",
+            "Cardiovascular_Disease",
+            "Vegetarian",
+            "Exercise_Frequency",
+            "Exercise_Type",
+            "Exercise_Duration",
+            "Sleep_Hours",
+            "Stress_Level",
+            "Smoking"
+        ]
+    },
+    "test_metrics": {
+        "accuracy": 0.7714,
+        "balanced_accuracy": 0.7639,
+        "precision": 0.5,
+        "recall": 0.75,
+        "f1_score": 0.6,
+        "roc_auc": 0.8472,
+        "brier_score": 0.1747
+    }
+}
